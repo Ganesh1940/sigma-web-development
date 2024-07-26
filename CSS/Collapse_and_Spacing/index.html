@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse and spacing</title>
+
+    <style>
+        table, th, td{
+            border: solid;
+            border-collapse: separate;  /* collapse || seperate */
+            border-spacing: 6px;    /* Border Spacing */
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Collapse</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Group</th>
+        </tr>
+
+        <tr>
+            <td>Abhi</td>
+            <td>10k</td>
+            <td rowspan="2">WebD</td>
+        </tr>
+
+        <tr>
+            <td>Anil</td>
+            <td>15k</td>
+            <!-- <td colspan="2">WebD</td> -->
+        </tr>
+
+        <tr>
+            <td>Chandu</td>
+            <td>12k</td>
+            <td>Node.js</td>
+        </tr>
+    </table>
+</body>
+</html>

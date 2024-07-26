@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* Class Selector */
+        .brown{
+            background-color: brown;
+        }
+
+        /* Id Selector */
+        #blue{
+            background-color: lightblue;
+        }
+
+        /* Child Selector */
+        div > p{        /*sirf div ke andar jo bhi paragraph hai woh purple ho jayega. if me div ke andar ek pre tag ke andar paragraph karu tho usme koi changes nai hoga ie. woh purple nai hoga. */
+            color: purple;
+        }
+
+        /* Desendant Selector */
+        div p{      /* isme bss div ke andar paragraph aaya tho styling apply hoga. */
+            background-color: violet;
+        }
+
+        /* Universal Selector */
+        *{          /* ye sab pe apply hota hai. */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a{
+            background-color: yellow;   /* background color ko yellow karega */
+        }
+
+        a:visited{
+            color: red;     /* Color of the text changes once visited the website */
+        }
+
+        a:link{
+            color: red;     /* Color of the link can be changed using this */
+        }
+
+        a:active{
+            color: green;   /* When link is clicked the background color changes for that instance. */
+        }
+        
+        h1:hover{       
+            background-color: green;    /* jub mouse ko hover karega toh color change hoga. */
+        }
+
+        p:first-child{      /* first paragraph tag jo bhi hoga uspe ye cheze apply hoga. */
+            color: rgb(130, 247, 4);    
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's learn types of Selectors in CSS</h1>
+
+    <!-- Class Selector -->
+    <div class="brown">
+        I am div tag. I am an inline element.
+    </div>
+
+    <!-- Id Selector -->
+    <div id="blue">
+        I am second div. I am unhappy cause I am second div, does that make any sence?
+    </div>
+
+    <!-- Child Selector & Desendant Selector -->
+    <div>
+        I am third div. I am depressed.
+        <pre>
+            <p>
+                I am a paragraph within thrid div.
+            </p>
+        </pre>
+    </div>
+
+    <div>
+        <p>i am first Paragraph tag.</p>
+        <p>I am second Paragraph tag.</p>
+    </div>
+
+    <!-- Pseudo Selector -->
+    <a href="https://www.youtube.com/">Youtube</a>
+
+
+</body>
+</html>

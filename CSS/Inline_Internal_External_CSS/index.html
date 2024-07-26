@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal & External </title>
+
+    <!-- Internal CSS styling part -->
+    <style>
+        pre{
+            color: red;
+        }
+    </style>
+
+    <!-- External CSS styling part -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>There are three ways to connect CSS with html</h1>
+    <ol>
+        <li>
+            <dt><strong>Inline CSS</strong></dt>
+            <dd>To style we need to add style attribute to each element. It will be rearly used.</dd>
+        </li><br>
+
+        <li>
+            <dt><strong>Internal CSS</strong></dt>
+            <dd>In this all the styling content is written in style tag which is within head tags.</dd>
+        </li><br>
+
+        <li>
+            <dt><strong>External CSS</strong></dt>
+            <dd>In this a .css file is creted and all the styling content is written in this file and finally link with html page.</dd>
+        </li>
+
+    </ol>
+
+    <!-- Examples -->
+     <!-- Inline CSS -->
+      
+     <div style="color: pink;background-color: green;">Hello, I am div. How are you?</div>
+
+     <!-- Internal CSS (SEE THE STYLE TAG WITHIN HEAD TAGS)-->
+     <h5>A small java code </h5>
+      <pre>
+        static void main{
+            System.out.println("I am pre tag. I am happy "!!)
+        }
+      </pre>
+
+      <!-- External CSS (STYLING PART IS IN style.css FILE) -->
+       <p>
+        <h3>Paragraph Heading</h3>
+        Paragraph starging........
+       </p>
+</body>
+</html>

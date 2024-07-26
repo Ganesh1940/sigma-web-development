@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSL and HSLA</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        background-color: yellow;
+      }
+
+      pre {
+        /*           hue, saturation, lightness */
+        /*    hsl(0-360, 1% - 100%, 1% - 100%) */
+        color: hsl(219, 97%, 38%);
+      }
+
+      p {
+        /*           hue, saturation, lightness, Opacity */
+        /*    hsl(0-360, 1% - 100%, 1% - 100%, 0-1) */
+        color: hsla(345, 60%, 30%, 0.7);
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>HSL(Hue, Saturation, Lightness)</h1>
+    <pre>
+    <b>Hue(h):</b>
+Hue represents the type of color. It is measured in degrees, and its value lies from 0 to 360.
+0 degree represents black, 120 degree is for green, and 360 degree is for blue.
+    <b>Saturation (S)</b>:
+Saturation controls the intensity or purity of the color. It is measured in percentage, and its value lies between 0% and 100%.
+0% saturation is no color (grayscale),  and 100% saturation is the most intense colour.
+    <b>Lightness (L)</b>:
+Lightness determines how light or dark the colour is. It is measured in percentage, and its value lies between 0% and 100%.
+0% lightness represents pure black, 50% lightness represents normal colour, and 100% lightness is pure white.
+    </pre>
+
+    <h1>HSLA(Hue, Saturation, Lightness, Alpha value)</h1>
+    <p>
+<b>A</b> stands for <b>Alpha value</b>, which is used to set the opacity. Alpha values lie between 0 and 1.
+    </p>
+
+  </body>
+</html>

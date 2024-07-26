@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthands in CSS</title>
+
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        h1 {
+            color: purple;
+        }
+
+        #defination {
+            background-color: lightblue;
+        }
+
+        #syntax {
+            background-color: lightcoral;
+        }
+
+        /* div {
+            background-image: url(letter_a.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 107px;
+        } */
+
+        /* USING SHORTHAND METHOD */
+        div{
+            height: 100px;
+            width: 3000px;
+            background: lightcyan scroll url(letter_a.png) repeat-x bottom;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorthands</h1>
+    <p id="defination">Shorthand in the shorter way of writing all the background properties like background Color, background-image, background-size, background-position, back
+        attachemnt.
+    </p>
+
+    <pre id="syntax">
+        selector{
+            background: [background-color] [background-attachment] [background-image] [background-repeat] [background-position];
+        }        
+    </pre>
+
+    <div>
+    </div>
+</body>
+</html>

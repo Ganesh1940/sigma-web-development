@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+.question {
+    background-color: lightblue;
+}
+
+/* Selects the first child */
+div :first-child {
+    background-color: rgb(115, 176, 115);
+    color: red;
+}
+
+/* Selects the last child */
+div :last-child{
+    background-color: blue;
+    color: white;
+}

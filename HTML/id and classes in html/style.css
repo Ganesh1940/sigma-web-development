@@ -1,0 +1,16 @@
+.language{
+    color: red;
+}
+
+.color{
+    background-color: lightgreen;
+}
+
+.nothing{
+    background-color: purple;
+}
+
+#name{
+    color: aqua;
+    background-color: black;
+}

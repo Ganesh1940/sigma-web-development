@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity & Cascade</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        color: brown;
+      }
+
+      /* read harry bhai ka documentation. */
+      .yellow {
+        color: yellow;
+      }
+
+      /* when IMP it overrides inline css too. means here color would be red. */
+      .red {
+        color: red !important;
+      }
+
+      /* id has high priority than class */
+      #green {
+        color: rgb(2, 107, 9);
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      /* This is an attribute selector */
+      [data-y=hello]{
+        background-color: aqua;
+      }
+
+      .imp {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Specificity and Cascade</h1>
+
+    <p id="green" class="yellow red blue" data-y="hello">
+      I am learning Specificity of the CSS property application.
+    </p>
+
+    <p class="imp"><strong>Specificity </strong>: <br>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+
+    <p><b><u>NOTE</u> : </b>For more better understanding see through Harry bhai ka documentation.</p>
+    
+    <h1>Quick Quiz</h1>
+    <p>CSS code:</p>
+
+    <pre>a.harryclass.rohan-class[href]:hover {
+         color: red;
+      }</pre>
+
+      
+  </body>
+</html>

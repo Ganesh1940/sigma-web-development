@@ -1,0 +1,49 @@
+h1{
+    color: red;
+}
+
+.red{
+    color: blue;
+}
+
+/*using Hexadecemal code to give color */
+#red {
+    color: #FF0000;
+}
+
+#green {
+    color: #00FF00;
+}
+
+#blue {
+    color: #0000FF;
+}
+
+#unknown {
+    color: #993423;
+}
+
+/* RGB and RGBA */
+#rgb {
+    color: rgb(34,255,165);
+}
+
+#rgba {
+    color: rgba(2, 32, 49, 0.6);
+}
+
+/* HSL (Hue, Saturation, Lightness) */
+
+
+
+/* background color */
+.green{
+    background-color: green;
+}
+
+/* background image property */
+p{
+    background-image: url(budget\ image.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}

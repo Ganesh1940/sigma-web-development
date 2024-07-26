@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <title>Font, Text and Colors</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+      h1 {
+        text-align: center;
+        color: rgb(231, 119, 7);
+      }
+
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",sans-serif;
+        
+        /* can apply custom font size. */
+        /* font-size: 20px; */
+      }
+
+      div {
+        /* font downloaded from google fonts and added using @import withing style tag. we can also use link tag to link this fond which is in head tags. */
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-weight: 900;
+
+        font-style: oblique; /* italic || normal || oblique || etc.. */
+
+        text-decoration: underline;
+      }
+
+      /* pata nai line height not working. */
+      .line-heigth {
+        line-height: 150%;
+    }
+
+    /* letter spacing */
+    .letter-spacing {
+        letter-spacing: 8px;
+        background-color: grey;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>Font</h1>
+    <p>
+      We add font style using font-family. There are various options in
+      font-family cause if not available any font, next font can be applied.
+    </p>
+
+    <div>Hello, This is Ganesh Podeti.</div>
+
+    <p>Exploring line-height property. Let's see how it works.</p>
+
+    <p class="line-height ">Line One.</p>
+    <p class="line-height">Line Two.</p>
+    <p> The spacing btw line1 and line2 can be customized using line-height.</p>
+
+    <!-- letter spacing -->
+     <span class="letter-spacing">Trying letter spacing.</span>
+
+  </body>
+</html>

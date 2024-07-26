@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text properties</title>
+
+    <style>
+        h1 {
+             /* alignes text to center. */
+            text-align: center;
+            color: purple;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        .capitalize{
+            text-transform: capitalize;
+        }
+
+        .uppercase{
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .text-decoration{
+            /* can decorate line adding underline || overline etc.. */
+            text-decoration: underline;
+
+            /* gives color to decoration */
+            text-decoration-color: red;
+
+            /* gives style to decoration */
+            text-decoration-style: wavy;
+
+            /* gives thickness to decoration */
+            text-decoration-thickness: 4px;
+
+            /* gives some spacing at the start. */
+            text-indent: 30px;
+        }
+
+        .lorem {
+            border: 3px solid blue;
+            width: 70px;
+            
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            /* text-overflow: clip; */
+
+            /* see at the border at which a word is ending...u'll see if word doesn't fits it is breaked. */
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Transform</h1>
+    <h2>Capitalize</h2>
+    <p class="capitalize">this makes each and ever word capital.</p>
+
+    <h2>Uppercase</h2>
+    <p class="uppercase">This capitalizes the whole sentence/thing...</p>
+
+    <h2>Lowecase</h2>
+    <p class="lowercase">Opposite to Uppercase, make every thing in lowercase.</p>
+
+    <h1>Text Decoration</h1>
+
+    <p class="text-decoration">This text will be underlined using text-decoration property.</p>
+
+    <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi amet, odio dicta distinctio quidem magni repellendus beatae perspiciatis architecto nihil consectetur! Ducimus omnis blanditiis corporis porro ipsam? Reprehenderit ipsam suscipit, quibusdam obcaecati veniam modi.</p>
+
+</body>
+</html>

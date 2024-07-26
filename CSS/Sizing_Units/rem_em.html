@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        color: lightgreen;
+        background-color: red;
+      }
+
+      /* root element jo sab pe apply hoga */
+      html {
+        font-size: 12px;
+      }
+
+      .class {
+        background-color: lightcoral;
+        width: 500px;
+        height: 370px;
+        border: 3px solid rebeccapurple;
+        font-size: 20px;
+        /* default size 16px hota hai....here we are appling 2em so the default size is doubled. (ie. 32px) */
+      }
+
+      .class p {
+        /* REMEMBER LIKE THIS: p tag ka size jitna hone wala tha (ie. 20px) uska 2 times. */
+        font-size: 2em;
+
+        /* REMEMBER LIKE THIS: p tag ka root element (html element) ka size ka double ho jayega. (ie. 24px) */
+        /* font-size: 2rem; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>-- rem & em --</h1>
+
+    <div class="class">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex fuga
+        quibusdam officiis eum! Deleniti quae nemo rerum ad quo aliquam
+        perferendis temporibus!
+      </p>
+    </div>
+  </body>
+</html>

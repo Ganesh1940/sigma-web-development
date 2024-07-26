@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+
+    <style>
+        #remember {
+            background-color: yellow;
+        }
+        
+        .dotted {
+            border-style: dotted;
+            border-color: #FF0034;
+        }
+
+        .dashed {
+            border-style: dashed;
+            color: aqua;    /* when color property is applied border also get's the same color. */
+        }
+
+        .double {
+            border-style: double;
+            /* color: red; */
+            border-color: rgba(45, 128, 25, 0.8);
+        }
+
+        .groove {
+            border-style: groove;
+            color: pink;
+            border-color: hsl(360, 40%, 67%);   /* in this color property doesn't apply for the bg color. */
+        }
+
+        .ridge {
+            border-style: ridge;
+            color: blue;
+            border-color: red;  /* in this color property doesn't apply for the bg color. */
+        }
+
+        .inset {
+            border-style: inset;
+            color: purple;
+            border-color: #FF0034;
+        }
+
+        .outset {
+            border-style: outset;
+            color: aquamarine;
+            border-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Border Styling</h1>
+
+    <p class="dotted">Dotted Border</p>
+    <p class="dashed">Dashed Border</p>
+    <p class="double">Double Border</p>
+    <p class="groove">Groove Border</p>
+    <p class="ridge">Ridge Border</p>
+    <p class="inset">Inset Border</p>
+    <p class="outset">Outset Border</p>
+
+    <hr>
+    <p id="remember">
+        <b>Remember: </b>
+        <br> 
+        <b>-</b>
+        <u>Dotted, Dashed, Double</u>: When color property is applied border also get's the same color.
+        <br>
+        <b>-</b>
+        <u>Groove, Ridge, Inset, Outset</u>: In this color property doesn't apply for the bg color.
+    </p>
+</body>
+</html>

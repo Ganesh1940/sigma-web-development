@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity and Filter</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .first {
+            width: 450px;
+            height: 300px;
+            opacity: .6;   /* giving opacity to image */
+        }
+
+        .grayscale {
+            width: 200px;
+            height: 150px;
+            filter: grayscale(100%);   /* in percentage */
+        }
+
+        .blur {
+            width: 200px;
+            height: 150px;
+            filter: blur(2px);  /* unit in px */
+        }
+
+        .brightness {
+            width: 200px;
+            height: 150px;
+            filter: brightness(40%);   /* in percentage */
+        }
+        
+        .contrast {
+            width: 200px;
+            height: 150px;
+            filter: contrast(180%);
+        }
+
+        .invert {
+            width: 200px;
+            height: 150px;
+            filter: invert(100%);
+        }
+
+        .saturate {
+            width: 200px;
+            height: 150px;
+            filter: saturate(390%);
+        }
+        
+        .hue-rotate {
+            width: 200px;
+            height: 150px;
+            filter: hue-rotate(180%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Opacity</h1>
+
+    <img class="first" src="../legion wallpaper.webp" alt="wallpaper">
+
+    <h1>Filter</h1>
+
+    <h2>1. grayscale filter</h2>
+    <img class="grayscale" src="../../women.webp" alt="women">
+
+    <h2>Blur filter</h2>
+    <img class="blur" src="../../women.webp" alt="women">
+
+    <h2>Brightness</h2>
+    <img class="brightness" src="../../women.webp" alt="women">
+
+    <H2>Contrast</H2>
+    <img class="contrast" src="../../women.webp" alt="women">
+
+    <h2>Invert</h2>
+    <img src="../../women.webp" alt="women" class="invert"> 
+
+    <h2>Saturate</h2>
+    <img src="../../women.webp" alt="women" class="saturate">  
+
+    <h2>hue-rotate</h2>
+    <img src="../../women.webp" alt="women" class="hue-rotate">     
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyTrip.com</title>
+</head>
+<body>
+    <h1>Book My Trip</h1>
+    <h3>Enter your details</h3>
+    <form action="submit" method="post">
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Full name">
+        
+        <br><br>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+        <label for="age">Age: </label>
+        <input type="text" id="age" name="age" placeholder="Enter your age">
+
+        <br><br>
+        <label for="destination">Where would you like to go:</label>
+        <input type="text" id="destination" name="destination" placeholder="Destination">
+
+        <br><br>
+        <dvi>Select your budget: </dvi>
+        <select name="Budget" id="Buget">
+            <option value="5000">5000</option>
+            <option value="10000">10000</option>
+            <option value="15000">15000</option>
+            <option value="25000">25000</option>
+        </select>
+
+        <br><br>
+        <dvi>Number of members: </dvi>
+        <select name="members" id="members">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+
+    <br><br>
+    <input type="checkbox" id="done" name="done" value="yes">
+    <label for="done">The entered data is correct as per my knowledge and the required payment is done.</label>
+
+    <br><br>
+    <input type="submit" value="Book trip">
+    </form>
+</body>
+</html>

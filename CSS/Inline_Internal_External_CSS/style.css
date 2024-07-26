@@ -1,0 +1,18 @@
+pre{
+    color: green;   
+    background-color: yellow;
+}
+
+ol{
+    background-color: lightblue;
+}
+
+dt{
+    background-color: yellow;
+}
+
+/*
+     REMEMBER: 
+    if all ways are applied together ie. inline, internal and external css together, 
+    than the preference would be Inline > External > Internal
+*/

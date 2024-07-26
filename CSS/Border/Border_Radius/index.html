@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+
+    <style>
+        h1 {
+            border-radius: 20px;    
+            border: dotted;
+            border-color: blue;
+            color: red;
+            span{
+                color: green;
+            }
+        }
+
+        #rad1 {
+            color: red;
+            border-radius: 20%;
+            border: solid;
+        }
+
+        #rad2 {
+            border: dashed;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        #individual {
+            border: solid;
+            border-top-left-radius: 11px;
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 100%;
+            /* border-block-end: 0px; */
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border Radius using <span>px</span></h1>
+    <span id="rad1">Border raduis 1 using %</span>
+    <p id="rad2">Border raduis 2 using %</p>
+
+    <hr>
+
+    <h2><u>Set the border of individual corners</u></h2>
+    <p id="individual">We can set Individual Border radius to the specific coners such as top-left, top-right, bottom-right, bottom-left. <b>Remeber</b> : the unit is px or %</p>
+</body>
+</html>

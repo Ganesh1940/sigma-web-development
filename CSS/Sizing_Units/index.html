@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1{
+            text-align: center;
+            color: brown;
+        }
+
+        div{
+            border: 1px solid blue;
+            background-color: aqua;
+
+            /* width: 1463px; */
+            /* box-sizing: border-box; */
+
+            /* giving 100vw (ie. viewport-width) toh responsive hota hai */
+            width: 70vw;
+
+            /* 100% of height occupy kar lega.....matlab tera pura screen ka height le lega ye 100vh. */
+            height: 100vh;
+
+            /* this means Margin is equally applied from both the sides (ie. left & right).....therefore it is in center 
+            
+            NOTE: only applicable to block level elements, doesn't works for inline elements.*/
+            margin: auto;
+
+            /* margin give for top-bottom and left-right */
+            margin: 30px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Sizing</h1>
+
+    <div>Hello, I am Div tag.</div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea voluptatibus incidunt exercitationem aspernatur nobis sint eum minima laborum, aliquam cumque sunt vero dicta vitae illo blanditiis porro labore excepturi quibusdam ipsam debitis et pariatur!</div>
+
+    <h2></h1>
+</body>
+</html>
