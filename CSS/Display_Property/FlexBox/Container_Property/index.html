@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      /* Flexbox Direction property */
+      .direction {
+        border: 2px solid red;
+        background-color: lightblue;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+
+        /* gives space between the child elements */
+        /* gap: 3px; */
+      }
+
+      .child{
+        height: 25px;
+        width: 25px;
+      }
+
+      span {
+        border: 2px solid black;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>what is FlexBox</h1>
+    <p>
+      FlexBox aka Flexible Box Layout makes it easier to layout, align and style
+      items in the container while maintaining the responsiveness of the
+      website. To create a flexbox you need to set the display of the container
+      as flex Eg: {display: flex;}.
+    </p>
+
+    <!-- Flexbox Direction property -->
+    <div class="direction">
+      hello guys
+      <span class="child">1</span>
+      <span class="child">2</span>
+      <span class="child">3</span>
+    </div>
+  </body>
+</html>
