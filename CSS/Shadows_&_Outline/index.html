@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow and Outline</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      /* Box shadow */
+      .box1 {
+        width: 300px;
+        border: 2px solid black;
+        background-color: lightblue;
+        padding: 30px;
+
+        /* Box shadow property */
+        /*h-offset v-offset blur spread color  */
+        box-shadow: 25px 25px 5px 5px grey;
+      }
+
+      /* Text Shadow */
+      .text {
+        /* h-offset v-offset blur color */
+        text-shadow: 3px 3px 5px purple;
+      }
+
+      /* OUTLINE   */
+      .outline {
+        border: 4px solid red;
+
+        /* similar like a border */
+        outline: 10px dashed green;
+
+        /* it increases the space between the content and outline */
+        outline-offset: 40px;
+
+        /* gives the curvy edges. */
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box and Text Shadow</h1>
+
+    <!-- Box shadow -->
+    <div class="box1">Hello, This is Box-1</div>
+
+    <br /><br />
+
+    <!-- Text Shadow -->
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ratione
+      animi dignissimos doloribus fuga explicabo placeat inventore eos impedit
+      fugiat. Incidunt optio praesentium eos sapiente laboriosam error ex iure
+      velit? Aperiam facilis dolore sapiente dolorem id repudiandae error
+      consequuntur, at nostrum accusamus repellat velit illum.
+    </p>
+
+    <h1>Outline</h1>
+
+    <br /><br /><br />
+
+    <div class="outline">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+      consequatur rem minus excepturi voluptatem vitae! Nam ipsa omnis esse! Nam
+      doloribus debitis aut.
+    </div>
+  </body>
+</html>
